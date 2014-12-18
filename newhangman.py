@@ -1,13 +1,6 @@
-from Tkinter import *
-root = Tk()
-class MyApp:
-	def __init__(self, parent):
-		self.myParent = parent
-		self.myContainer1 = Frame(parent)
-		self.myContainer1.pack()          		
-		counter = 0
+counter = 0
                 
-		while True:
+while True:
           		wordbank = ['s', 't', 'r', 'a', 'w', 'b', 'b', 'e', 'r', 'r', 'y'] 
           		print "Topic is Fruit"
           		print "Guess a letter!"
@@ -23,21 +16,46 @@ class MyApp:
                             counter = counter + 1
                         if counter == 1:
                             print " O"
-                            print "TRY AGAIN HAHAHA"
+                            print "Enter your next letter:"
                             print "_____________"
                         if counter == 2:
                             print " O"
                             print " |"
       		            print " |"
-      		            print "TRY AGAIN HAHAHA"
+      		            print "Enter your next letter:"
       		            print "______________"
       		        if counter == 3:
       		            print " O"
       		            print " |"
       		            print " |"
-      		            print "/"
-      		            print "TRY AGAIN HAHAHA"
+      		            print "  \\"
+      		            print "Enter your next letter:"
       		            print "______________"
+      		        if counter == 4:
+      		            print " O"
+      		            print " |"
+      		            print " |"
+      		            print "/ \\"
+      		            print "Enter your next letter:"
+      		            print "______________"
+      		        if counter == 5:
+      		            print " O"
+      		            print " |\\"
+      		            print " |"
+      		            print "/ \\"
+      		            print "Enter your last letter! This is your last chance to guess!"
+      		        if counter == 6:
+      		            print " O"
+      		            print "/|\\"
+      		            print " |"
+      		            print "/ \\"
+      		            print "What a shame..."
+      		        if counter >= 6:
+      		            print "He is dead."
+      		            print "You lost."
+      		            break
+      		        if found >= 6:
+      		            print "You won!"
 #------------------BUNCH OF GARBAGE WE SHOULD NOT TOUCH------------
 #oval = drawpad.create_oval(420,90,490,190, fill = "black")  #head
 #rectangle = drawpad.create_rectangle(400,190,510,400, fill = "black")  #body
@@ -46,8 +64,8 @@ class MyApp:
 #rectangle = drawpad.create_rectangle(410,400,430,460, fill = "black")
 #rectangle = drawpad.create_rectangle(480,400,500,460, fill = "black")
 
-myapp = MyApp(root)
-root.mainloop()
+#myapp = MyApp(root)
+#root.mainloop()
 
 
 
